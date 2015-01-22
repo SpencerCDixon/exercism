@@ -6,9 +6,16 @@
 var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
-//
-// YOUR CODE GOES HERE
-//
+  var regEx = /\?$/
+  if (input === input.toUpperCase()) {
+    return "Woah, chill out!"
+   } else if (regEx.test(input)) {
+    return "Sure."
+   } else if (input === "") {
+    eturn "Fine. Be that way!"
+   }else {
+    return "Whatever."
+   }
 };
 
 module.exports = Bob;
